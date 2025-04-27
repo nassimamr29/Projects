@@ -1,0 +1,6 @@
+[submodule "QuizCampus"]
+	path = QuizCampus
+	url = https://github.com/nassimamr29/Projects/QuizCampus.git
+[submodule "MegaFlix"]
+	path = MegaFlix
+	url = https://github.com/nassimamr29/Projects/MegaFlix.git
