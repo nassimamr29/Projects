@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Espace Professeur</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>👩‍🏫 Espace Professeur</h1>
+      <button class="logout">Déconnexion</button>
+    </header>
+
+    <!-- Section Création de QCM -->
+    <section class="card">
+      <h2>📝 Créer un QCM</h2>
+      <form id="qcm-form">
+        <label for="titre">Titre du QCM</label>
+        <input type="text" id="titre" required>
+
+        <label for="description">Description</label>
+        <textarea id="description" required></textarea>
+
+        <div id="questions-container"></div>
+
+        <button type="button" id="ajouter-question">+ Ajouter une question</button>
+        <button type="submit" class="submit-btn">✅ Enregistrer le QCM</button>
+      </form>
+    </section>
+
+    <!-- Liste des QCMs -->
+    <section class="card">
+      <h2>📚 QCMs créés</h2>
+      <ul id="qcm-list"></ul>
+    </section>
+
+    <!-- Section Recherche QCM -->
+    <section class="card">
+      <h2>🔍 Recherche de QCM</h2>
+      <form id="search-form">
+        <label for="search">Rechercher un QCM par titre</label>
+        <input type="text" id="search" placeholder="Entrez un titre">
+        <button type="submit" class="submit-btn">Rechercher</button>
+      </form>
+    </section>
+
+    <!-- Section Statistiques -->
+    <section class="card">
+      <h2>📊 Statistiques des QCM</h2>
+      <div id="stats-container">
+        <div class="stat-item">
+          <h3>Taux de réussite moyen</h3>
+          <p>75%</p>
+        </div>
+        <div class="stat-item">
+          <h3>Nombre total de tentatives</h3>
+          <p>120</p>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

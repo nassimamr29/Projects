@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Connexion à QuizCampus - Plateforme de QCM pour étudiants et enseignants.">
+  <meta name="author" content="QuizCampus">
+  <title>Connexion - QuizCampus</title>
+  <link rel="stylesheet" href="style.css">
+
+
+<body>
+  <header>
+    <div class="logo">🎓 QuizCampus</div>
+    <nav>
+      <a href="index.html">Accueil</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <div class="login-wrapper">
+    <div class="login-card">
+      <h1>🔐 Connexion à <span>QuizCampus</span></h1>
+      <p class="subtitle">Veuillez sélectionner votre rôle pour continuer :</p>
+      
+      <div class="role-selection">
+        <a href="http://localhost:8000/QuizCampus/authentification.php?role=Professeur" class="role-box" aria-label="Se connecter en tant que professeur">
+          <div class="icon">👨‍🏫</div>
+          <h2>Professeur</h2>
+          <p>Créer et gérer des QCM, suivre les performances des étudiants.</p>
+        </a>
+      
+        <a href="http://localhost:8000/QuizCampus/authentification.php?role=Candidat" class="role-box" aria-label="Se connecter en tant que candidat">
+          <div class="icon">🎓</div>
+          <h2>Candidat</h2>
+          <p>Passer des QCM, consulter vos résultats et progresser !</p>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 QuizCampus. Tous droits réservés.</p>
+  </footer>
+</body>
+</html>
