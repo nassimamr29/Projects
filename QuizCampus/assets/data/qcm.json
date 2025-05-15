@@ -1,0 +1,368 @@
+[
+    {
+        "titre": "Programmation",
+        "description": "Testez vos connaissances en programmation.",
+        "questions": [
+            {
+                "question": "Quel langage est principalement utilis\u00e9 pour le d\u00e9veloppement web frontend ?",
+                "type": "choix_multiple",
+                "reponses": [
+                    "JavaScript",
+                    "Python",
+                    "Java"
+                ],
+                "bonnes": [
+                    "JavaScript"
+                ]
+            },
+            {
+                "question": "Quel est le r\u00f4le principal d'un compilateur ?",
+                "type": "choix_multiple",
+                "reponses": [
+                    "Ex\u00e9cuter le code directement",
+                    "Traduire le code source en code machine",
+                    "G\u00e9rer la m\u00e9moire"
+                ],
+                "bonnes": [
+                    "Traduire le code source en code machine"
+                ]
+            },
+            {
+                "question": "Quel est le but du langage Python ?",
+                "type": "choix_multiple",
+                "reponses": [
+                    "D\u00e9veloppement web uniquement",
+                    "Automatisation et calcul scientifique",
+                    "D\u00e9veloppement mobile"
+                ],
+                "bonnes": [
+                    "Automatisation et calcul scientifique"
+                ]
+            },
+            {
+                "question": "Quel est un framework JavaScript populaire pour le d\u00e9veloppement frontend ?",
+                "type": "choix_multiple",
+                "reponses": [
+                    "React",
+                    "Spring",
+                    "Django"
+                ],
+                "bonnes": [
+                    "React"
+                ]
+            }
+        ]
+    },
+    {
+        "titre": "Math\u00e9matiques",
+        "description": "Testez vos connaissances en math\u00e9matiques.",
+        "questions": [
+            {
+                "question": "Quel est le r\u00e9sultat de 25 x 4 ?",
+                "type": "choix_multiple",
+                "reponses": [
+                    "100",
+                    "120",
+                    "80"
+                ],
+                "bonnes": [
+                    "100"
+                ]
+            },
+            {
+                "question": "Quel est le p\u00e9rim\u00e8tre d'un cercle de rayon 5 ?",
+                "type": "choix_multiple",
+                "reponses": [
+                    "31.4",
+                    "25",
+                    "20"
+                ],
+                "bonnes": [
+                    "31.4"
+                ]
+            },
+            {
+                "question": "Combien de c\u00f4t\u00e9s a un hexagone ?",
+                "type": "choix_multiple",
+                "reponses": [
+                    "5",
+                    "6",
+                    "7"
+                ],
+                "bonnes": [
+                    "6"
+                ]
+            },
+            {
+                "question": "Quel est le r\u00e9sultat de 7\u00b2 ?",
+                "type": "choix_multiple",
+                "reponses": [
+                    "49",
+                    "56",
+                    "63"
+                ],
+                "bonnes": [
+                    "49"
+                ]
+            }
+        ]
+    },
+    {
+        "titre": "Culture g\u00e9n\u00e9rale",
+        "description": "Testez vos connaissances en culture g\u00e9n\u00e9rale.",
+        "questions": [
+            {
+                "question": "Quelle est la capitale de la France ?",
+                "type": "choix_multiple",
+                "reponses": [
+                    "Paris",
+                    "Lyon",
+                    "Marseille"
+                ],
+                "bonnes": [
+                    "Paris"
+                ]
+            },
+            {
+                "question": "Qui a \u00e9crit 'Les Mis\u00e9rables' ?",
+                "type": "choix_multiple",
+                "reponses": [
+                    "Victor Hugo",
+                    "\u00c9mile Zola",
+                    "Honor\u00e9 de Balzac"
+                ],
+                "bonnes": [
+                    "Victor Hugo"
+                ]
+            },
+            {
+                "question": "En quelle ann\u00e9e a eu lieu la R\u00e9volution fran\u00e7aise ?",
+                "type": "choix_multiple",
+                "reponses": [
+                    "1789",
+                    "1792",
+                    "1804"
+                ],
+                "bonnes": [
+                    "1789"
+                ]
+            },
+            {
+                "question": "Qui a peint la Mona Lisa ?",
+                "type": "choix_multiple",
+                "reponses": [
+                    "Leonardo da Vinci",
+                    "Michelangelo",
+                    "Rapha\u00ebl"
+                ],
+                "bonnes": [
+                    "Leonardo da Vinci"
+                ]
+            }
+        ]
+    },
+    {
+        "titre": "Musique",
+        "description": "Testez vos connaissances en musique.",
+        "questions": [
+            {
+                "question": "Qui est le chanteur de 'Thriller' ?",
+                "type": "choix_multiple",
+                "reponses": [
+                    "Michael Jackson",
+                    "Elvis Presley",
+                    "Prince"
+                ],
+                "bonnes": [
+                    "Michael Jackson"
+                ]
+            },
+            {
+                "question": "Quel groupe a chant\u00e9 'Bohemian Rhapsody' ?",
+                "type": "choix_multiple",
+                "reponses": [
+                    "Queen",
+                    "The Beatles",
+                    "Led Zeppelin"
+                ],
+                "bonnes": [
+                    "Queen"
+                ]
+            },
+            {
+                "question": "Quel instrument est jou\u00e9 par un pianiste ?",
+                "type": "choix_multiple",
+                "reponses": [
+                    "Piano",
+                    "Guitare",
+                    "Violon"
+                ],
+                "bonnes": [
+                    "Piano"
+                ]
+            },
+            {
+                "question": "Qui a compos\u00e9 la symphonie n\u00b09, 'L'Ode \u00e0 la joie' ?",
+                "type": "choix_multiple",
+                "reponses": [
+                    "Beethoven",
+                    "Mozart",
+                    "Brahms"
+                ],
+                "bonnes": [
+                    "Beethoven"
+                ]
+            }
+        ]
+    },
+    {
+        "titre": "Cin\u00e9ma",
+        "description": "Testez vos connaissances en cin\u00e9ma.",
+        "questions": [
+            {
+                "question": "Qui a r\u00e9alis\u00e9 le film 'Inception' ?",
+                "type": "choix_multiple",
+                "reponses": [
+                    "Christopher Nolan",
+                    "Steven Spielberg",
+                    "Martin Scorsese"
+                ],
+                "bonnes": [
+                    "Christopher Nolan"
+                ]
+            },
+            {
+                "question": "Quel film a remport\u00e9 l'Oscar du meilleur film en 1994 ?",
+                "type": "choix_multiple",
+                "reponses": [
+                    "Forrest Gump",
+                    "Pulp Fiction",
+                    "The Shawshank Redemption"
+                ],
+                "bonnes": [
+                    "Forrest Gump"
+                ]
+            },
+            {
+                "question": "Quel acteur joue le r\u00f4le de Jack Dawson dans 'Titanic' ?",
+                "type": "choix_multiple",
+                "reponses": [
+                    "Leonardo DiCaprio",
+                    "Johnny Depp",
+                    "Brad Pitt"
+                ],
+                "bonnes": [
+                    "Leonardo DiCaprio"
+                ]
+            },
+            {
+                "question": "Quel film d'animation a \u00e9t\u00e9 r\u00e9alis\u00e9 par Pixar en 2003 ?",
+                "type": "choix_multiple",
+                "reponses": [
+                    "Finding Nemo",
+                    "Toy Story",
+                    "Shrek"
+                ],
+                "bonnes": [
+                    "Finding Nemo"
+                ]
+            }
+        ]
+    },
+    {
+        "titre": "test",
+        "description": "QCM facile",
+        "questions": [
+            {
+                "question": "1+1 ?",
+                "type": "choix_multiple",
+                "reponses": [
+                    "1",
+                    "6",
+                    "2"
+                ],
+                "bonnes": [
+                    "2"
+                ]
+            },
+            {
+                "question": "2 - 4 ?",
+                "type": "choix_multiple",
+                "reponses": [
+                    "0",
+                    "2",
+                    "-2"
+                ],
+                "bonnes": [
+                    "-2"
+                ]
+            }
+        ]
+    },
+    {
+        "titre": "aaaaaaaaa",
+        "description": "thhhhh",
+        "questions": [
+            {
+                "question": "eee",
+                "type": "choix_multiple",
+                "reponses": [
+                    "zzz"
+                ],
+                "bonnes": [
+                    "zzz"
+                ]
+            },
+            {
+                "question": "zzz",
+                "type": "choix_multiple",
+                "reponses": [
+                    "zz"
+                ],
+                "bonnes": [
+                    "z"
+                ]
+            }
+        ]
+    },
+    {
+        "titre": "politique",
+        "description": "pr\u00e9sidentielle 2027",
+        "questions": [
+            {
+                "question": "devrais je me repr\u00e9senter",
+                "type": "vrai_faux",
+                "reponses": [
+                    "vrai",
+                    "faux"
+                ],
+                "bonnes": [
+                    "vrai"
+                ]
+            },
+            {
+                "question": "2+2 ",
+                "type": "choix_multiple",
+                "reponses": [
+                    "4",
+                    "6",
+                    "9"
+                ],
+                "bonnes": [
+                    "4"
+                ]
+            },
+            {
+                "question": "aaa",
+                "type": "choix_multiple",
+                "reponses": [
+                    "a",
+                    "a"
+                ],
+                "bonnes": [
+                    "a"
+                ]
+            }
+        ]
+    }
+]

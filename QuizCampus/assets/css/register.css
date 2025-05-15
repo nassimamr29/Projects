@@ -1,0 +1,255 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #141e30, #243b55);
+    color: #fff;
+    min-height: 100vh;
+  }
+  
+  
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  header .logo {
+    font-size: 1.6em;
+    font-weight: bold;
+  }
+  
+  header nav a {
+    color: #333;
+    margin-left: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  header nav a:hover {
+    color: #6e8efb;
+  }
+  
+
+  .container h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #6e8efb;
+  }
+  
+  /* Champs de formulaire */
+  .form-group {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    margin-bottom: 8px;
+    font-weight: 600;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  input[type="date"],
+  select {
+    padding: 10px 15px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 1em;
+    transition: border-color 0.3s ease;
+  }
+  
+  input:focus,
+  select:focus {
+    border-color: #6e8efb;
+    outline: none;
+  }
+  
+
+  
+  .two-cols .form-group {
+    flex: 1;
+  }
+  
+  /* Bouton */
+  .btn {
+    background: linear-gradient(to right, #00c9ff, #92fe9d);
+    padding: 14px;
+    width: 100%;
+    border: none;
+    border-radius: 30px;
+    color: #000;
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    margin-top: 20px;
+  }
+  
+  .btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Lien en bas */
+  .footer-link {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 0.95em;
+  }
+  
+  .footer-link a {
+    color: #fff;
+    font-weight: bold;
+    text-decoration: underline;
+  }
+  
+  /* Responsive */
+  @media (max-width: 600px) {
+    .two-cols {
+      flex-direction: column;
+    }
+  
+    .container {
+      margin: 20px;
+      padding: 30px 20px;
+    }
+  }
+  
+  /* Google Fonts */
+
+
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  background: linear-gradient(to right, #00c6ff, #0072ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  position: relative;
+}
+
+nav a::after {
+  content: "";
+  display: block;
+  width: 0%;
+  height: 2px;
+  background: #00c6ff;
+  transition: width 0.3s ease;
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+/* Container */
+.container {
+  max-width: 600px;
+  margin: 80px auto;
+  padding: 40px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3);
+  animation: fadeIn 1s ease;
+}
+
+.container h1 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  text-align: center;
+  background: linear-gradient(to right, #00c6ff, #0072ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Form */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  font-size: 0.95rem;
+  margin-bottom: 5px;
+  display: block;
+  color: #ddd;
+}
+
+input[type="email"],
+input[type="password"] {
+  padding: 12px 15px;
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.15);
+  color: #fff;
+  font-size: 1rem;
+  transition: background 0.3s ease;
+}
+
+input:focus {
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.25);
+}
+
+/* Button */
+.btn {
+  padding: 12px;
+  background: linear-gradient(135deg, #00c6ff, #0072ff);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+  background: linear-gradient(135deg, #0072ff, #00c6ff);
+  transform: scale(1.03);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 30px;
+  background: #1e1e2f;
+  color: #aaa;
+  font-size: 0.9rem;
+  margin-top: 60px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+

@@ -1,0 +1,476 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to right, #1f1c2c, #928dab);
+    color: white;
+    padding: 2rem;
+  }
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    background: rgba(255, 255, 255, 0.05);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  }
+  nav a {
+    color: #fff;
+    margin-left: 20px;
+    text-decoration: none;
+    font-weight: 500;
+    position: relative;
+  }
+  
+  nav a::after {
+    content: "";
+    display: block;
+    width: 0%;
+    height: 2px;
+    background: #ff6ec4;
+    transition: width 0.3s ease;
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+  }
+  
+  nav a:hover::after {
+    width: 100%;
+  }
+
+  h1 {
+    text-align: center;
+    color: #f9f9f9;
+  }
+
+  form {
+    background-color: #2d2a4a;
+    padding: 2rem;
+    border-radius: 15px;
+    max-width: 600px;
+    margin: auto;
+    box-shadow: 0 0 20px rgba(0,0,0,0.3);
+  }
+
+  label {
+    display: block;
+    margin: 1rem 0 0.5rem;
+  }
+
+  input, textarea, select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    margin-bottom: 1rem;
+  }
+
+  button {
+    background: #ff6f61;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+  }
+
+  button:hover {
+    background: #e55d4f;
+  }
+/* Conteneur des QCM */
+.qcm-list {
+  margin: 50px auto;
+  max-width: 1000px;
+  background: linear-gradient(135deg, #3c5a7e, #1e3b5e);
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 6px 35px rgba(0, 0, 0, 0.1);
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+  animation: fadeIn 1s ease-out;
+}
+
+/* Animation d'apparition pour la liste des QCM */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Cartes QCM */
+.qcm-card {
+  background: linear-gradient(145deg, #2c3c6c, #3e5473);
+  border-radius: 16px;
+  padding: 25px;
+  margin-bottom: 25px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  opacity: 0;
+  animation: cardFadeIn 0.8s forwards ease-out;
+}
+
+/* Animation d'apparition pour les cartes QCM */
+@keyframes cardFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.qcm-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+/* Titre des cartes QCM */
+.qcm-card h3 {
+  color: #00aaff;
+  font-size: 22px;
+  font-weight: 600;
+  margin-top: 0;
+  letter-spacing: 0.5px;
+}
+
+/* Bouton de la carte QCM */
+.qcm-card button {
+  margin-top: 18px;
+  padding: 14px 22px;
+  border-radius: 10px;
+  border: none;
+  background: linear-gradient(90deg, #ff6347, #0066cc);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.3s ease;
+}
+
+.qcm-card button:hover {
+  background: linear-gradient(90deg, #0066cc, #0057a5);
+  transform: scale(1.05);
+}
+
+/* Popup */
+.qcm-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: fadeIn 0.5s ease-out;
+  z-index: 1000;
+}
+
+/* Contenu de la popup avec animation premium */
+.popup-content {
+  background: linear-gradient(145deg, #cddaf7, #a7bdf3);
+  border-radius: 16px;
+  padding: 35px;
+  max-width: 750px;
+  max-height: 85vh;
+  overflow-y: auto;
+  position: relative;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+  transform: scale(0.8);
+  opacity: 0;
+  animation: popupZoom 0.4s forwards ease-out;
+}
+
+/* Zoom d’entrée pour la popup */
+@keyframes popupZoom {
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+  
+  /* Bouton de fermeture stylé */
+  .close-btn {
+    position: absolute;
+    top: 12px;
+    right: 16px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    cursor: pointer;
+    transition: transform 0.2s ease, color 0.3s;
+  }
+  
+  .close-btn:hover {
+    transform: scale(1.2);
+    color: #ff5252;
+  }
+  
+  /* Titres et textes */
+  .popup-content h2 {
+    font-size: 28px;
+    color: #1c2a6d;
+    margin-bottom: 20px;
+  }
+  
+  .popup-content p {
+    font-size: 16px;
+    color: #444;
+    margin-bottom: 20px;
+  }
+  
+  /* Questions et réponses stylées */
+  .question {
+    margin-bottom: 25px;
+  }
+  
+  .question h4 {
+    font-size: 20px;
+    color: #2a3b8f;
+    margin-bottom: 10px;
+  }
+  
+  .question ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .question li {
+    background: #f1f4fd;
+    padding: 10px 15px;
+    margin: 6px 0;
+    border-radius: 8px;
+    transition: background 0.3s, transform 0.2s;
+  }
+  
+  .question li:hover {
+    background: #dbe4ff;
+    transform: translateX(5px);
+  }
+  
+  .question li.correct {
+    border-left: 5px solid #4CAF50;
+    font-weight: bold;
+    background: #eaffea;
+  }
+  
+
+.close-btn {
+    position: absolute;
+    top: 12px;
+    right: 22px;
+    font-size: 26px;
+    cursor: pointer;
+    color: #888;
+}
+
+.close-btn:hover {
+    color: #333;
+}
+
+/* Section Question */
+.question {
+  margin-top: 30px;
+  padding: 25px;
+  background: #f6f9ff;
+  border-left: 5px solid #a7bdf3;
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.question:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+  background: #eef4fc;
+}
+
+/* Titre de la question */
+.question h4 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #2a3b8f;
+  margin-bottom: 18px;
+  transition: color 0.3s ease;
+}
+
+.question:hover h4 {
+  color: #3c72a3;
+}
+
+/* Liste des réponses */
+.question ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.question li {
+  background: #97c3d3;
+  padding: 14px 20px;
+  margin-bottom: 12px;
+  border-radius: 10px;
+  font-size: 16px;
+  transition: background 0.3s, transform 0.3s ease, padding 0.2s;
+}
+
+.question li:hover {
+  background: #3fd9b8;
+  transform: translateX(8px);
+  cursor: pointer;
+  padding-left: 22px;
+}
+
+/* Réponses correctes */
+.question li.correct {
+  background: #d7fdd7;
+  border-left: 6px solid #4CAF50;
+  color: #256d25;
+  font-weight: 600;
+  position: relative;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: background 0.3s, box-shadow 0.3s ease;
+}
+
+.question li.correct::before {
+  content: "✔";
+  color: #4CAF50;
+  position: absolute;
+  left: 10px;
+  font-size: 20px;
+  transition: color 0.3s;
+}
+
+.question li.correct:hover::before {
+  color: #2e8b57;
+}
+
+/* Réponses incorrectes */
+.question li.incorrect {
+  background: #f8d7da;
+  border-left: 6px solid #e74c3c;
+  color: #c0392b;
+  font-weight: 600;
+  position: relative;
+  transition: background 0.3s, box-shadow 0.3s ease;
+}
+
+.question li.incorrect::before {
+  content: "✘";
+  color: #e74c3c;
+  position: absolute;
+  left: 10px;
+  font-size: 20px;
+  transition: color 0.3s;
+}
+
+.question li.incorrect:hover::before {
+  color: #c0392b;
+}
+
+  .main-header {
+    position: fixed;
+    top: 0;
+    left: 250px; /* largeur de la sidebar */
+    right: 0;
+    height: 60px;
+    background: linear-gradient(to right, #4a63e7, #657fff);
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    z-index: 10;
+  }
+  
+  .main-header h1 {
+    font-size: 20px;
+    margin: 0;
+  }
+  .side-panel {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 220px;
+    height: 100vh;
+    background: #1e1e2f;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+  }
+  
+  .user-info {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .user-info img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+  
+  .user-info h3 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  
+  .side-nav ul {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+  }
+  
+  .side-nav li {
+    padding: 15px 20px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background 0.2s ease;
+  }
+  
+  .side-nav li:hover {
+    background: #2e2e48;
+  }
+  .main-header {
+    position: fixed;
+    top: 0;
+    left: 250px; /* largeur de la sidebar */
+    right: 0;
+    height: 60px;
+    background: rgba(74, 83, 127, 0.35); /* transparence */
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+    border-radius: 12px;
+  }
+  
+  .main-header h1 {
+    font-size: 20px;
+    margin: 0;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+  }
+  

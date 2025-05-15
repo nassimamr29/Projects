@@ -1,0 +1,92 @@
+[
+    {
+        "civilite": "Monsieur",
+        "role": "Candidat",
+        "nom": "amrouche",
+        "prenom": "nassim",
+        "naissance": "2003-12-13",
+        "email": "aaaa@icoud.com",
+        "password": "$2y$10$8ZTP71zClLfhZHXc2v4.buvlHpDyuB8jtrUCHyfWhbQk.Hj9f5vf."
+    },
+    {
+        "civilite": "Monsieur",
+        "role": "Candidat",
+        "nom": "amrouche",
+        "prenom": "nassim",
+        "naissance": "2003-12-13",
+        "email": "aaaaa@icoud.com",
+        "password": "$2y$10$N\/7.gU5DKuugxxFDBNNCGOOU5ZcI\/ZTXLUPtnumW0lP\/I55A2R9de"
+    },
+    {
+        "civilite": "Monsieur",
+        "role": "Candidat",
+        "nom": "leo",
+        "prenom": "messi",
+        "naissance": "2000-05-01",
+        "email": "messi.leo@messi.com",
+        "password": "$2y$10$ZMuNDcITCzzYbwLm2hPz7.GClPxLjAlVltLhPLlPZTfkLjetrNWWC"
+    },
+    {
+        "civilite": "Monsieur",
+        "role": "Professeur",
+        "nom": "amrouche",
+        "prenom": "nassim",
+        "naissance": "2003-12-14",
+        "email": "nassim.amrouche@icloud.com",
+        "password": "$2y$10$PXaBPWBrfdLMk.robUKmT.7MEfNeqEAzpwyIjlFGv0Y6NLRApB84G"
+    },
+    {
+        "civilite": "Monsieur",
+        "role": "Professeur",
+        "nom": "benamara",
+        "prenom": "amine",
+        "naissance": "2000-01-01",
+        "email": "assim.amrouche@icloud.com",
+        "password": "$2y$10$q5FkSLQVM1aIPj1FjAZnYOcZ5X0i7LYg3jiSCOWNM.a1GMjbJ7.da"
+    },
+    {
+        "civilite": "Monsieur",
+        "role": "Professeur",
+        "nom": "Emmanuel",
+        "prenom": "Macron",
+        "naissance": "1997-05-30",
+        "email": "macron@elysee.com",
+        "password": "$2y$10$lVADHkrH4Edf8qevFClJL.tWevGYJAJaa6nC\/VOAhxJoFweI2QCta"
+    },
+    {
+        "civilite": "Monsieur",
+        "role": "Candidat",
+        "nom": "amrouche",
+        "prenom": "nassim",
+        "naissance": "2024-11-24",
+        "email": "nassim@icloud.com",
+        "password": "$2y$10$1WxzAluaFzphv7JtC5CHq.JvZMnF2.bBWAspfDnH.YIf6fvvrfMFi"
+    },
+    {
+        "civilite": "Madame",
+        "role": "Professeur",
+        "nom": "Born",
+        "prenom": "Elisabethe ",
+        "naissance": "1959-02-12",
+        "email": "elisa@gmail.fr",
+        "password": "$2y$10$ymoFyBnpE7QHmZEQONka3OSn53jH3hr.Xu7ySTkrZtLYcj.KBETlS"
+    },
+    {
+        "civilite": "Monsieur",
+        "role": "Candidat",
+        "nom": "john",
+        "prenom": "cena",
+        "naissance": "2000-05-14",
+        "email": "a@gmail.com",
+        "password": "$2y$10$mdxXnmjq3aCgsbRI4IThrOca6.Rxk3tUpjcRv79cSUUrst6t42KAO"
+    },
+    {
+        "civilite": "Monsieur",
+        "role": "Candidat",
+        "nom": "amrouche",
+        "prenom": "nassim",
+        "naissance": "2003-12-13",
+        "email": "amrouche.nassim@icloud.com",
+        "password": "$2y$10$7wM8OuTmz7v8Fx36HxodtemUmvvjb6VsEcBhhBegLw5QH0Oh\/ZRP6"
+    }
+]

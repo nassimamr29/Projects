@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gestion de QCM</title>
+  <link rel="stylesheet" href="../assets/css/professeur.css"/>
+</head>
+<header class="main-header">
+  <h1>🧠 Plateforme de Gestion des QCM</h1>
+  <h2>Espace professeur</h2>
+  <nav>
+    <a href="index.html">Se déconnecter</a>
+  </nav>
+</header>
+
+<body>
+  <aside class="side-panel">
+    <div class="user-info">
+      <img src="https://i.pravatar.cc/60?u=qcm" alt="User Avatar">
+      <h3>Professeur</h3>
+    </div>
+    <nav class="side-nav">
+      <ul>
+        <li><a href="#dashboard">🏠 Tableau de bord</a></li>
+        <li><a href="#qcmForm">➕ Nouveau QCM</a></li>
+        <li><a href="#qcmList">📁 Mes QCM</a></li>
+      </ul>
+    </nav>
+  </aside>
+  
+  <h1>Créer un QCM</h1>
+  <form id="qcmForm">
+    <label for="titre">Titre du QCM</label>
+    <input type="text" id="titre" required>
+
+    <label for="description">Description</label>
+    <textarea id="description" required></textarea>
+
+    <div id="questionsContainer">
+      <div class="question-group" id="question-1">
+        <label for="question-1-input">Question 1</label>
+        <input type="text" id="question-1-input" required>
+
+        <label for="type-1">Type</label>
+        <select id="type-1" required>
+          <option value="choix_multiple">Choix multiple</option>
+          <option value="vrai_faux">Vrai / Faux</option>
+          <option value="texte">Réponse texte</option>
+        </select>
+
+        <label for="reponses-1">Réponses possibles (séparées par des virgules)</label>
+        <input type="text" id="reponses-1">
+
+        <label for="bonnes-1">Bonnes réponses (séparées par des virgules)</label>
+        <input type="text" id="bonnes-1">
+      </div>
+    </div>
+
+    <button type="button" id="addQuestionBtn">Ajouter une question</button>
+    <button type="submit">Ajouter le QCM</button>
+  </form>
+
+  <div class="qcm-container">
+    <h2>QCM créés</h2>
+    <button id="loadQCMButton">Charger les QCM</button>
+    <div id="qcmList" class="qcm-list"></div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 QuizCampus</p>
+  </footer>
+  <script src="../assets/js/professeur.js"></script>
+  <script src="../assets/js/qcm_load.js"></script>
+</body>
+</html>

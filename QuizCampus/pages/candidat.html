@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Accueil - QuizCampus</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">🎓 QuizCampus</div>
+    <a href="../php/mon_compte.php">Mon Compte</a>
+
+  </header>
+
+  <div class="container">
+    <h1>Bienvenue sur QuizCampus !</h1>
+    <p>Sélectionnez un test pour commencer.</p>
+    <div id="qcmList" class="qcm-cards"></div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 QuizCampus</p>
+  </footer>
+
+  <script>
+    fetch('../assets/data/qcm.json')
+      .then(res => res.json())
+      .then(data => {
+        const container = document.getElementById('qcmList');
+        data.forEach((qcm, index) => {
+          const card = document.createElement('div');
+          card.className = 'qcm-card';
+          card.innerHTML = `
+            <h2>${qcm.titre}</h2>
+            <p>${qcm.description}</p>
+            <a href="qcm.html?index=${index}" class="btn">Passer le test</a>
+          `;
+          container.appendChild(card);
+        });
+      });
+  </script>
+</body>
+</html>

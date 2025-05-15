@@ -1,0 +1,83 @@
+/* Style général */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f5f5f5;
+  }
+  
+  header {
+    background-color: #2a3b8f;
+    padding: 15px;
+    color: white;
+  }
+  
+  header .logo {
+    font-size: 24px;
+  }
+  
+  header nav {
+    text-align: right;
+  }
+  
+  header nav a {
+    color: white;
+    margin-left: 15px;
+    text-decoration: none;
+  }
+  
+  .container {
+    padding: 20px;
+  }
+  
+  h1 {
+    font-size: 24px;
+    color: #2a3b8f;
+  }
+  
+  #qcmList {
+    margin-top: 20px;
+  }
+  
+  .question {
+    background-color: #f6f9ff;
+    padding: 15px;
+    border-left: 5px solid #a7bdf3;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .question h4 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #2a3b8f;
+  }
+  
+  .question ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .question li {
+    background-color: #97c3d3;
+    padding: 12px;
+    margin: 8px 0;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .question li:hover {
+    background-color: #3fd9b8;
+  }
+  
+  #timer {
+    margin-bottom: 20px;
+  }
+  
+  #result {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #2a3b8f;
+  }
+  
